@@ -17,21 +17,21 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="@dimen/imagennew"
             android:layout_weight="1"
             app:srcCompat="@drawable/hombre1" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/imagen"
+            android:layout_height="@dimen/imagennew"
             android:layout_weight="1"
             app:srcCompat="@drawable/mujer1" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/imagen"
+            android:layout_height="@dimen/imagennew"
             android:layout_marginLeft="50dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/hombre2" />
@@ -47,7 +47,7 @@
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/imagen"
+            android:layout_height="@dimen/imagennew"
             android:layout_marginLeft="15dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/mujer2" />
@@ -55,7 +55,7 @@
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/imagen"
+            android:layout_height="@dimen/imagennew"
             android:layout_marginRight="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/hombre3" />
@@ -63,10 +63,18 @@
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/imagen"
+            android:layout_height="@dimen/imagennew"
             android:layout_weight="1"
             app:srcCompat="@drawable/hombre4" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:text="@string/editar" />
 
 </LinearLayout>

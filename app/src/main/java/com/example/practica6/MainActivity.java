@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         m.setOptionalIconsVisible(true);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {

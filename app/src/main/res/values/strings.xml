@@ -3,4 +3,10 @@
     <string name="persona">Personas</string>
     <string name="blocDeNota">Bloc de notas</string>
     <string name="infoBloc">Empieza a escribir aqui . . .</string>
+    <string name="llamar">Llamar</string>
+    <string name="correo">Correo</string>
+    <string name="editLlamar">Introduce el teléfono</string>
+    <string name="editCorreo">Introduce el correo.</string>
+    <string name="editar">Editar personas</string>
+    <string name="guardar">Guardar</string>
 </resources>

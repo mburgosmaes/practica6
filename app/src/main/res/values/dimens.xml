@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="imagen">150dp</dimen>
+    <dimen name="editImagen">80</dimen>
+    <dimen name="imagennew">100dp</dimen>
 </resources>
