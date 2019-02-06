@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class editarpersona extends AppCompatActivity {
 
     ImageView img1,img2,img3,img4,img5,img6;
-    EditText txtImg1,txtImg2, txtImg3, txtImg4, txtImg5, txtImg6;
+    EditText txtImg1,txtImg2, txtImg3, txtImg4, txtImg5, txtImg6, txtImg7, txtImg8, txtImg9,txtImg10,txtImg11,txtImg12;
     String telefono="";
     String correo="";
 
@@ -34,23 +34,30 @@ public class editarpersona extends AppCompatActivity {
         txtImg4 = findViewById(R.id.txtImg4);
         txtImg5 = findViewById(R.id.txtImg5);
         txtImg6 = findViewById(R.id.txtImg6);
+        txtImg7 = findViewById(R.id.txtImg7);
+        txtImg8 = findViewById(R.id.txtImg8);
+        txtImg9 = findViewById(R.id.txtImg9);
+        txtImg10 = findViewById(R.id.txtImg10);
+        txtImg11 = findViewById(R.id.txtImg11);
+        txtImg12 = findViewById(R.id.txtImg12);
+
     }
     public void onClick(View view)
     {
         SharedPreferences prefs = getSharedPreferences("ficheroconfiguracion", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(telefono, txtImg1.getText().toString());
-        editor.putString(correo, txtImg2.getText().toString());
         editor.putString(telefono, txtImg2.getText().toString());
-        editor.putString(correo, txtImg2.getText().toString());
-        editor.putString(telefono, txtImg3.getText().toString());
         editor.putString(correo, txtImg3.getText().toString());
-        editor.putString(telefono, txtImg4.getText().toString());
         editor.putString(correo, txtImg4.getText().toString());
         editor.putString(telefono, txtImg5.getText().toString());
-        editor.putString(correo, txtImg5.getText().toString());
         editor.putString(telefono, txtImg6.getText().toString());
-        editor.putString(correo, txtImg6.getText().toString());
+        editor.putString(correo, txtImg7.getText().toString());
+        editor.putString(correo, txtImg8.getText().toString());
+        editor.putString(telefono, txtImg9.getText().toString());
+        editor.putString(telefono, txtImg10.getText().toString());
+        editor.putString(correo, txtImg11.getText().toString());
+        editor.putString(correo, txtImg12.getText().toString());
         editor.commit();
         Toast.makeText(this, "Se han actualizados las llamadas y correos de las personas", Toast.LENGTH_LONG).show();;
     }

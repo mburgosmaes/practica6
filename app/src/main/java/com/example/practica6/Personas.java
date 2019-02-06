@@ -30,6 +30,7 @@ public class Personas extends AppCompatActivity {
     String correo;
     String telefono;
     Button btnEditar;
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,11 +108,48 @@ public class Personas extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         getMenuInflater().inflate(R.menu.persona, menu);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        String cadena = "";
+        prefs = getSharedPreferences("ficheroconfiguracion", Context.MODE_PRIVATE);
+        switch (item.getItemId()) {
+            case R.id.opcion3:
+                cadena = prefs.getString(telefono, null);
+                if (cadena == null) {
+                    Toast.makeText(this, "Teléfono vacío", Toast.LENGTH_LONG).show();
+                } else {
+                    if (ContextCompat.checkSelfPermission(getApplicationContext(), CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+                        Intent callIntent = new Intent(Intent.ACTION_CALL);
+                        callIntent.setData(Uri.parse("teléfono:" + cadena));
+                        startActivity(callIntent);
+                    } else {
+                        requestPermissions(new String[]{CALL_PHONE}, 1);
+                    }
 
+                }
+                break;
+            case R.id.opcion4:
+                cadena = prefs.getString(correo, null);
+                if (cadena == null) {
+                    Toast.makeText(this, "Correo vacío", Toast.LENGTH_LONG).show();
+                }else{
+                    Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                    emailIntent.setType("text/plain");
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL, cadena);
+                    startActivity(emailIntent);
+                }
+                break;
+        }
+        return true;
+    }
 }
+
+
