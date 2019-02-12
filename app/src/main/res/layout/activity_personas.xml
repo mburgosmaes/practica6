@@ -80,7 +80,5 @@
         android:layout_gravity="bottom"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        android:foregroundGravity="bottom"
-        android:gravity="bottom"
         android:text="@string/editar" />
 </LinearLayout>
