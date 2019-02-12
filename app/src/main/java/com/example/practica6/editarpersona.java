@@ -59,6 +59,6 @@ public class editarpersona extends AppCompatActivity {
         editor.putString(correo, txtImg11.getText().toString());
         editor.putString(correo, txtImg12.getText().toString());
         editor.commit();
-        Toast.makeText(this, "Se han actualizados las llamadas y correos de las personas", Toast.LENGTH_LONG).show();;
+        Toast.makeText(this,getString(R.string.toastActualizar) , Toast.LENGTH_SHORT).show();
     }
 }

@@ -124,7 +124,7 @@ public class Personas extends AppCompatActivity {
             case R.id.opcion3:
                 cadena = prefs.getString(telefono, null);
                 if (cadena == null) {
-                    Toast.makeText(this, "Teléfono vacío", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,getString(R.string.toastTlfVacio) , Toast.LENGTH_SHORT).show();
                 } else {
                     if (ContextCompat.checkSelfPermission(getApplicationContext(), CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
                         Intent callIntent = new Intent(Intent.ACTION_CALL);
@@ -139,7 +139,7 @@ public class Personas extends AppCompatActivity {
             case R.id.opcion4:
                 cadena = prefs.getString(correo, null);
                 if (cadena == null) {
-                    Toast.makeText(this, "Correo vacío", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,getString(R.string.toastCorreoVacio) , Toast.LENGTH_SHORT).show();
                 }else{
                     Intent emailIntent = new Intent(Intent.ACTION_SEND);
                     emailIntent.setType("text/plain");

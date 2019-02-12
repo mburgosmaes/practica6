@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practica6</string>
+    <string name="persona" translatable="false">Personas</string>
+    <string name="blocDeNota" translatable="false">memo pad</string>
+    <string name="infoBloc" translatable="false">Inizia a scrivere qui ...</string>
+    <string name="llamar" translatable="false">" chiamata"</string>
+    <string name="correo" translatable="false">Posta</string>
+    <string name="editLlamar" translatable="false">" Entra nel telefono"</string>
+    <string name="editCorreo" translatable="false">" Entra nel posta"</string>
+    <string name="editar" translatable="false">Modifica persona</string>
+    <string name="guardar" translatable="false">Salvare</string>
+    <string name="toastActualizar" translatable="false">" Le chiamate e le email delle persone sono state aggiornate"</string>
+    <string name="toastCorreoVacio" translatable="false">Posta vuoto</string>
+    <string name="toastTlfVacio" translatable="false">Telefono vuoto</string>
+</resources>

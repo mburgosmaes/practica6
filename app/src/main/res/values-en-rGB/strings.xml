@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practica6</string>
+    <string name="persona" translatable="false">Person</string>
+    <string name="blocDeNota" translatable="false">note bloc</string>
+    <string name="infoBloc" translatable="false">Start writing here . . -</string>
+    <string name="llamar" translatable="false">Call</string>
+    <string name="correo" translatable="false">Mail</string>
+    <string name="editLlamar" translatable="false">" Enter the phone"</string>
+    <string name="editCorreo" translatable="false">Enter the mail</string>
+    <string name="editar" translatable="false">Edit persons</string>
+    <string name="guardar" translatable="false">Send</string>
+    <string name="toastActualizar" translatable="false">" Calls and emails from people have been updated"</string>
+    <string name="toastCorreoVacio" translatable="false">Mail empty</string>
+    <string name="toastTlfVacio" translatable="false">Phone empty</string>
+</resources>

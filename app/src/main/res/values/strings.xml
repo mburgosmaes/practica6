@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">practica6</string>
-    <string name="persona">Personas</string>
-    <string name="blocDeNota">Bloc de notas</string>
-    <string name="infoBloc">Empieza a escribir aqui . . .</string>
-    <string name="llamar">Llamar</string>
-    <string name="correo">Correo</string>
-    <string name="editLlamar">Introduce el teléfono</string>
-    <string name="editCorreo">Introduce el correo.</string>
-    <string name="editar">Editar personas</string>
-    <string name="guardar">Guardar</string>
+    <string name="persona" translatable="false">Personas</string>
+    <string name="blocDeNota" translatable="false">Bloc de notas</string>
+    <string name="infoBloc" translatable="false">Empieza a escribir aqui . . .</string>
+    <string name="llamar" translatable="false">Llamar</string>
+    <string name="correo" translatable="false">Correo</string>
+    <string name="editLlamar" translatable="false">Introduce el teléfono</string>
+    <string name="editCorreo" translatable="false">Introduce el correo.</string>
+    <string name="editar" translatable="false">Editar personas</string>
+    <string name="guardar" translatable="false">Guardar</string>
+    <string name="toastActualizar" translatable="false">Se han actualizados las llamadas y correos de las personas</string>
+    <string name="toastCorreoVacio" translatable="false">Correo vacío</string>
+    <string name="toastTlfVacio" translatable="false">Teléfono vació</string>
 </resources>
